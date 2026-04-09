@@ -9,7 +9,7 @@ const { v4: uuidv4 } = require('uuid');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-const GIGACHAT_API_KEY = process.env.GIGACHAT_CLIENT_API;
+const GIGACHAT_API_KEY = 'MDE5ZDZmMDYtOGM4Ni03Njc0LThhMDQtOTRhYTIyYTg4Yzc0OmMxYjA3YjhkLTQ4OWItNDQwOC1iNzNkLTVlNTQ5ZjAxNTUwOQ==';
 
 app.use(cors());
 app.use(express.json());
