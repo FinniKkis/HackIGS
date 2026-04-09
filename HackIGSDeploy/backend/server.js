@@ -180,13 +180,3 @@ app.listen(PORT, () => {
     console.warn('⚠️  сценарии будут в демо-режиме');
   }
 });
-
-const path = require('path');
-
-// Раздаём собранный фронтенд
-app.use(express.static(path.join(__dirname, '../frontend/dist')));
-
-// Все остальные запросы → index.html (для Vue Router)
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../frontend/dist/index.html'));
-});
